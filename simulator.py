@@ -3,6 +3,7 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 import random
+random.seed(10)
 
 
 class simulator:
@@ -56,7 +57,7 @@ class simulator:
         schedule = {i:in_edges[i] for i in range(len(in_edges))}
         for edge in in_edges+[out_edge]:
             b = self.buffers[edge].qsize()/(self.lengths[edge]/4)
-            scheduled_edge = schedule[(self.time//10)%len(in_edges)]
+            scheduled_edge = schedule[(self.time//30)%len(in_edges)]
             if(self.eligible[edge]):
                 if(edge in in_edges):
                     if(edge==scheduled_edge):
@@ -101,10 +102,10 @@ class simulator:
         for merge in self.merges:
             in_edges, out_edge = merge[0], merge[1]
             self.iter_merge_equisignal(in_edges,out_edge)
-            union_merge.union(set(in_edges))
-            union_merge.union({out_edge})
+            union_merge = union_merge.union(set(in_edges))
+            union_merge = union_merge.union({out_edge})
         rem_edges = all_edges - union_merge
-        if(rem_edges is not None):
+        if(len(rem_edges)):
             for edge in rem_edges:
                 b = self.buffers[edge].qsize()/(self.lengths[edge]/4)
                 if(self.eligible[edge]):
@@ -164,10 +165,10 @@ class simulator:
         for merge in self.merges:
             in_edges, out_edge = merge[0], merge[1]
             self.iter_merge_self_regulate(in_edges,out_edge)
-            union_merge.union(set(in_edges))
-            union_merge.union({out_edge})
+            union_merge = union_merge.union(set(in_edges))
+            union_merge = union_merge.union({out_edge})
         rem_edges = all_edges - union_merge
-        if(rem_edges is not None):
+        if(len(rem_edges)):
             for edge in rem_edges:
                 b = self.buffers[edge].qsize()/(self.lengths[edge]/4)
                 if(self.eligible[edge]):
