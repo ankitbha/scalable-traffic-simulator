@@ -7,7 +7,7 @@ random.seed(10)
 
 
 class simulator:
-    def __init__(self, edges, lengths, input_edges, next_edge, curve, merges):
+    def __init__(self, edges, lengths, input_edges, next_edge, merges, curve):
         self.edges = edges
         self.lengths = lengths
         self.input_edges = input_edges
