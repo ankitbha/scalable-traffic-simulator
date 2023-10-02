@@ -114,7 +114,7 @@ while time.time() - Sim_start < Sim_end:
         
         # Calculate used green time and discharge rate
         All_Vehicles = Vissim.Net.Vehicles.GetAll()
-        vehicles_in_lane = [veh for veh in All_Vehicles if veh.AttValue('Lane') == f"{i+1}-1"]
+        vehicles_in_lane = [veh for veh in All_Vehicles if veh.AttValue('Lane') == f"{i+1}-1" or veh.AttValue('Lane') == f"{i+3}-1" or veh.AttValue('Lane') == f"{i+1}-2" or veh.AttValue('Lane') == f"{i+3}-2"]
         stage_start_time = time.time()
 
         available_green_time = act_stage_lengths[i]
@@ -125,7 +125,7 @@ while time.time() - Sim_start < Sim_end:
 
         for t in range(int(act_stage_lengths[i])):
             New_All_Vehicles = Vissim.Net.Vehicles.GetAll()
-            new_vehicles_in_lane = [veh for veh in New_All_Vehicles if veh.AttValue('Lane') == f"{i+1}-1"]
+            new_vehicles_in_lane = [veh for veh in New_All_Vehicles if veh.AttValue('Lane') == f"{i+1}-1" or veh.AttValue('Lane') == f"{i+3}-1" or veh.AttValue('Lane') == f"{i+1}-2" or veh.AttValue('Lane') == f"{i+3}-2"]
 
             car_exited = False
             for veh in vehicles_in_lane:                
@@ -140,7 +140,7 @@ while time.time() - Sim_start < Sim_end:
             if not car_exited:
                 used_green_time -= 1
             
-            vehicles_in_lane = [veh for veh in New_All_Vehicles if veh.AttValue('Lane') == f"{i+1}-1"]
+            vehicles_in_lane = [veh for veh in New_All_Vehicles if veh.AttValue('Lane') == f"{i+1}-1" or veh.AttValue('Lane') == f"{i+3}-1" or veh.AttValue('Lane') == f"{i+1}-2" or veh.AttValue('Lane') == f"{i+3}-2"]
             
             Vissim.Simulation.RunSingleStep()    
 
