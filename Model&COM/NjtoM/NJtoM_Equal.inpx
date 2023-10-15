@@ -156,8 +156,9 @@
 		<conflictArea addStopDist="0" anticipRout="0" avoidBlockMajor="true" avoidBlockMinor="1" conflTypDetmAuto="true" conflTypMan="CROSSING" frontGapDef="0.5" link1="4" link2="10003" mesoCritGap="3.5" minGapBlockDef="3" no="5" obsAdjLns="false" rearGapDef="0.5" safDistFactDef="1.5" status="UNDETERMINED" visibLink1="100" visibLink2="100"/>
 		<conflictArea addStopDist="0" anticipRout="0" avoidBlockMajor="true" avoidBlockMinor="1" conflTypDetmAuto="true" conflTypMan="CROSSING" frontGapDef="0.5" link1="10000" link2="10003" mesoCritGap="3.5" minGapBlockDef="3" no="6" obsAdjLns="false" rearGapDef="0.5" safDistFactDef="1.5" status="UNDETERMINED" visibLink1="100" visibLink2="100"/>
 		<conflictArea addStopDist="0" anticipRout="0" avoidBlockMajor="true" avoidBlockMinor="1" conflTypDetmAuto="true" conflTypMan="CROSSING" frontGapDef="0.5" link1="10001" link2="10003" mesoCritGap="3.5" minGapBlockDef="3" no="7" obsAdjLns="false" rearGapDef="0.5" safDistFactDef="1.5" status="UNDETERMINED" visibLink1="100" visibLink2="100"/>
-		<conflictArea addStopDist="0" anticipRout="0" avoidBlockMajor="true" avoidBlockMinor="1" conflTypDetmAuto="true" conflTypMan="CROSSING" frontGapDef="0.5" link1="5" link2="6" mesoCritGap="3.5" minGapBlockDef="3" no="8" obsAdjLns="false" rearGapDef="0.5" safDistFactDef="1.5" status="PASSIVE" visibLink1="100" visibLink2="100"/>
-		<conflictArea addStopDist="0" anticipRout="0" avoidBlockMajor="true" avoidBlockMinor="1" conflTypDetmAuto="true" conflTypMan="CROSSING" frontGapDef="0.5" link1="9" link2="8" mesoCritGap="3.5" minGapBlockDef="3" no="9" obsAdjLns="false" rearGapDef="0.5" safDistFactDef="1.5" status="PASSIVE" visibLink1="100" visibLink2="100"/>
+		<conflictArea addStopDist="0" anticipRout="0" avoidBlockMajor="true" avoidBlockMinor="1" conflTypDetmAuto="true" conflTypMan="CROSSING" frontGapDef="0.5" link1="4" link2="5" mesoCritGap="3.5" minGapBlockDef="3" no="8" obsAdjLns="false" rearGapDef="0.5" safDistFactDef="1.5" status="PASSIVE" visibLink1="100" visibLink2="100"/>
+		<conflictArea addStopDist="0" anticipRout="0" avoidBlockMajor="true" avoidBlockMinor="1" conflTypDetmAuto="true" conflTypMan="CROSSING" frontGapDef="0.5" link1="4" link2="9" mesoCritGap="3.5" minGapBlockDef="3" no="9" obsAdjLns="false" rearGapDef="0.5" safDistFactDef="1.5" status="PASSIVE" visibLink1="100" visibLink2="100"/>
+		<conflictArea addStopDist="0" anticipRout="0" avoidBlockMajor="true" avoidBlockMinor="1" conflTypDetmAuto="true" conflTypMan="CROSSING" frontGapDef="0.5" link1="4" link2="10005" mesoCritGap="3.5" minGapBlockDef="3" no="10" obsAdjLns="false" rearGapDef="0.5" safDistFactDef="1.5" status="PASSIVE" visibLink1="100" visibLink2="100"/>
 	</conflictAreas>
 	<curvSpeedFuncs>
 		<curvSpeedFunc name="Road. Car. Based on Schimmelpfennig &amp; Nackenhorst (1985), Lindenmann &amp; Ranft (1978), and German road design guidelines FGSV RASt, RAL &amp; RAA" no="1">
@@ -1151,7 +1152,7 @@
 			<geometry>
 				<linkPolyPts>
 					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="126.05376110344986" y="-38.195056570301261" zOffset="0"/>
-					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="209.03722314446463" y="-38.364738354076593" zOffset="0"/>
+					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="394.99562314446467" y="-37.955138354076595" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
 			<lanes>
@@ -1169,33 +1170,11 @@
 				<lane markingType="1" width="3.5"/>
 			</lanes>
 		</link>
-		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" emiCalcAct="true" gradient="0" hasOvtLn="false" isPedArea="false" level="1" linkBehavType="6" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="6" ovtOnlyPT="false" ovtSpeedFact="1.3" rvsPark="false" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
-			<geometry>
-				<linkPolyPts>
-					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="210.03722105393663" y="-38.366783116067445" zOffset="0"/>
-					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="279.81496155196032" y="-38.509462285920172" zOffset="0"/>
-				</linkPolyPts>
-			</geometry>
-			<lanes>
-				<lane markingType="1" width="3.5"/>
-			</lanes>
-		</link>
 		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" emiCalcAct="true" gradient="0" hasOvtLn="false" isPedArea="false" level="1" linkBehavType="6" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="Manila" netPerfEvalAct="true" no="7" ovtOnlyPT="false" ovtSpeedFact="1.3" rvsPark="false" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
 			<geometry>
 				<linkPolyPts>
 					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="282.35857254832104" y="26.062365590999704" zOffset="0"/>
 					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="282.5306638021886" y="-36.174580882970311" zOffset="0"/>
-				</linkPolyPts>
-			</geometry>
-			<lanes>
-				<lane markingType="1" width="3.5"/>
-			</lanes>
-		</link>
-		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" emiCalcAct="true" gradient="0" hasOvtLn="false" isPedArea="false" level="1" linkBehavType="6" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="8" ovtOnlyPT="false" ovtSpeedFact="1.3" rvsPark="false" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
-			<geometry>
-				<linkPolyPts>
-					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="280.81495946143235" y="-38.511507047911024" zOffset="0"/>
-					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="365.21058806324186" y="-38.684076382231126" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
 			<lanes>
@@ -1231,10 +1210,10 @@
 					<linkPolyPoint rad="28.793158641684663" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="114.18623322193451" y="-45.520333245616612" zOffset="0"/>
 					<linkPolyPoint rad="20.890042451909871" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="116.39120104647809" y="-44.389314939770181" zOffset="0"/>
 					<linkPolyPoint rad="44.623492130505845" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="118.46438881952324" y="-42.886111576016489" zOffset="0"/>
-					<linkPolyPoint rad="23.403736417555074" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="120.47309050257091" y="-41.238288730509204" zOffset="0"/>
-					<linkPolyPoint rad="10.348058389371621" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="122.50285316082937" y="-39.723390900882983" zOffset="0"/>
-					<linkPolyPoint rad="13.168506743716661" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="124.63922385950687" y="-38.618962584772511" zOffset="0"/>
-					<linkPolyPoint rad="16.035133753323084" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="126.96777845624052" y="-38.196925522150323" zOffset="0"/>
+					<linkPolyPoint rad="23.440219940062036" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="120.47309050257091" y="-41.238288730509204" zOffset="0"/>
+					<linkPolyPoint rad="10.241698135507407" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="122.50285316082937" y="-39.723390900882983" zOffset="0"/>
+					<linkPolyPoint rad="13.181602401212064" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="124.63922385950687" y="-38.618962584772511" zOffset="0"/>
+					<linkPolyPoint rad="16.136076533804236" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="126.96778000333056" y="-38.194241190418076" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
 			<lanes>
@@ -1252,26 +1231,13 @@
 					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="119.48691283131637" y="-39.194752073010115" zOffset="0"/>
 					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="121.76163700156181" y="-38.69248197952728" zOffset="0"/>
 					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="124.04756445397868" y="-38.327857698421234" zOffset="0"/>
-					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="126.35406510867702" y="-38.195670621800545" zOffset="0"/>
+					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="126.35406561697955" y="-38.194788674025602" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
 			<lanes>
 				<lane markingType="1"/>
 			</lanes>
 			<toLinkEndPt lane="4 1" pos="0.3003046330223989"/>
-		</link>
-		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" emiCalcAct="true" gradient="0" hasOvtLn="false" isPedArea="false" linkBehavType="6" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="10002" ovtOnlyPT="false" ovtSpeedFact="1.3" rvsPark="false" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
-			<fromLinkEndPt lane="4 1" pos="82.982635520627113"/>
-			<geometry>
-				<linkPolyPts>
-					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="209.03622314655516" y="-38.364736309314601" zOffset="0"/>
-					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="210.03772105289136" y="-38.366784138448438" zOffset="0"/>
-				</linkPolyPts>
-			</geometry>
-			<lanes>
-				<lane markingType="1"/>
-			</lanes>
-			<toLinkEndPt lane="6 1" pos="0.0005"/>
 		</link>
 		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" emiCalcAct="true" gradient="0" hasOvtLn="false" isPedArea="false" linkBehavType="6" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="10003" ovtOnlyPT="false" ovtSpeedFact="1.3" rvsPark="false" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
 			<fromLinkEndPt lane="1 1" pos="200.73885227259689"/>
@@ -1280,29 +1246,16 @@
 					<linkPolyPoint rad="64.128421347218861" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="113.99040531550868" y="-31.444607155167247" zOffset="0"/>
 					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="116.05156998605378" y="-32.710189500100853" zOffset="0"/>
 					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="118.06654548642599" y="-34.158009326758069" zOffset="0"/>
-					<linkPolyPoint rad="30.413424004487311" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="120.07258068447305" y="-35.623042438291513" zOffset="0"/>
-					<linkPolyPoint rad="14.724340750646789" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="122.12098081297779" y="-36.913059176048392" zOffset="0"/>
-					<linkPolyPoint rad="14.130964602003841" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="124.2630511047231" y="-37.835829881375915" zOffset="0"/>
-					<linkPolyPoint rad="19.377405761086202" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="126.75638830319086" y="-38.196493278696508" zOffset="0"/>
+					<linkPolyPoint rad="30.375107672664555" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="120.07258068447305" y="-35.623042438291513" zOffset="0"/>
+					<linkPolyPoint rad="14.473458396504176" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="122.12098081297779" y="-36.913059176048392" zOffset="0"/>
+					<linkPolyPoint rad="13.935414950370209" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="124.2630511047231" y="-37.835829881375915" zOffset="0"/>
+					<linkPolyPoint rad="19.231810343169435" radiusEffect="BRAKE" radiusSrc="CALCULATED" x="126.75638949247632" y="-38.19442976810511" zOffset="0"/>
 				</linkPolyPts>
 			</geometry>
 			<lanes>
 				<lane markingType="1"/>
 			</lanes>
 			<toLinkEndPt lane="4 1" pos="0.70262866860590001"/>
-		</link>
-		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" emiCalcAct="true" gradient="0" hasOvtLn="false" isPedArea="false" linkBehavType="6" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="" netPerfEvalAct="true" no="10004" ovtOnlyPT="false" ovtSpeedFact="1.3" rvsPark="false" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
-			<fromLinkEndPt lane="6 1" pos="69.776886370647887"/>
-			<geometry>
-				<linkPolyPts>
-					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="279.81396155405088" y="-38.50946024115818" zOffset="0"/>
-					<linkPolyPoint radiusEffect="BRAKE" radiusSrc="CALCULATED" x="280.8154594603871" y="-38.511508070292017" zOffset="0"/>
-				</linkPolyPts>
-			</geometry>
-			<lanes>
-				<lane markingType="1"/>
-			</lanes>
-			<toLinkEndPt lane="8 1" pos="0.0005"/>
 		</link>
 		<link assumSpeedOncom="60" consVehInDynPot="false" costPerKm="0" desSpeedFact="1" direction="ALL" displayType="1" emergStopDist="5" emiCalcAct="true" gradient="0" hasOvtLn="false" isPedArea="false" linkBehavType="6" linkEvalAct="true" linkEvalSegLen="10" lnChgDist="200" lnChgDistIsPerLn="false" lnChgEvalAct="true" lookAheadDistOvt="500" mesoFollowUpGap="0" mesoSpeed="50" mesoSpeedModel="VEHICLEBASED" name="Erie" netPerfEvalAct="true" no="10005" ovtOnlyPT="false" ovtSpeedFact="1.3" rvsPark="false" showClsfValues="true" showLinkBar="true" showVeh="true" surch1="0" surch2="0" thickness="0" vehDynPotG="3" vehRecAct="true">
 			<fromLinkEndPt lane="7 1" pos="62.236184398102928"/>
@@ -2092,7 +2045,7 @@
 		</powerDistribution>
 	</powerDistributions>
 	<signalControllers>
-		<signalController active="true" cycTm="0" cycTmIsVar="false" debug="false" guiFile="#exe#vissig_gui.dll" intSupplyData="PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzYyB2ZXJzaW9uPSIyMDIwMDEiIGlkPSIxIiBuYW1lPSIiIGZyZXF1ZW5jeT0iMSIgc3RlcHM9IjAiIGRlZmF1bHRJbnRlcmdyZWVuTWF0cml4PSIwIiBpbnRlcnN0YWdlc1VzaW5nTWluRHVyYXRpb25zPSJ0cnVlIiBjaGVja1N1bT0iMzA5MTUzNTcxNCI+DQogIDxzaWduYWxkaXNwbGF5cz4NCiAgICA8ZGlzcGxheSBpZD0iMSIgbmFtZT0iUmVkIiBzdGF0ZT0iUkVEIj4NCiAgICAgIDxwYXR0ZXJucz4NCiAgICAgICAgPHBhdHRlcm4gcGF0dGVybj0iTUlOVVMiIGNvbG9yPSIjRkYwMDAwIiBpc0JvbGQ9InRydWUiIC8+DQogICAgICA8L3BhdHRlcm5zPg0KICAgIDwvZGlzcGxheT4NCiAgICA8ZGlzcGxheSBpZD0iMiIgbmFtZT0iUmVkL0FtYmVyIiBzdGF0ZT0iUkVEQU1CRVIiPg0KICAgICAgPHBhdHRlcm5zPg0KICAgICAgICA8cGF0dGVybiBwYXR0ZXJuPSJGUkFNRSIgY29sb3I9IiNDQ0NDMDAiIGlzQm9sZD0idHJ1ZSIgLz4NCiAgICAgICAgPHBhdHRlcm4gcGF0dGVybj0iU0xBU0giIGNvbG9yPSIjQ0MwMDAwIiBpc0JvbGQ9ImZhbHNlIiAvPg0KICAgICAgICA8cGF0dGVybiBwYXR0ZXJuPSJNSU5VUyIgY29sb3I9IiNDQzAwMDAiIGlzQm9sZD0iZmFsc2UiIC8+DQogICAgICA8L3BhdHRlcm5zPg0KICAgIDwvZGlzcGxheT4NCiAgICA8ZGlzcGxheSBpZD0iMyIgbmFtZT0iR3JlZW4iIHN0YXRlPSJHUkVFTiI+DQogICAgICA8cGF0dGVybnM+DQogICAgICAgIDxwYXR0ZXJuIHBhdHRlcm49IkZSQU1FIiBjb2xvcj0iIzAwQ0MwMCIgaXNCb2xkPSJ0cnVlIiAvPg0KICAgICAgICA8cGF0dGVybiBwYXR0ZXJuPSJTT0xJRCIgY29sb3I9IiMwMENDMDAiIGlzQm9sZD0iZmFsc2UiIC8+DQogICAgICA8L3BhdHRlcm5zPg0KICAgIDwvZGlzcGxheT4NCiAgICA8ZGlzcGxheSBpZD0iNCIgbmFtZT0iQW1iZXIiIHN0YXRlPSJBTUJFUiI+DQogICAgICA8cGF0dGVybnM+DQogICAgICAgIDxwYXR0ZXJuIHBhdHRlcm49IkZSQU1FIiBjb2xvcj0iI0NDQ0MwMCIgaXNCb2xkPSJ0cnVlIiAvPg0KICAgICAgICA8cGF0dGVybiBwYXR0ZXJuPSJTTEFTSCIgY29sb3I9IiNDQ0NDMDAiIGlzQm9sZD0iZmFsc2UiIC8+DQogICAgICA8L3BhdHRlcm5zPg0KICAgIDwvZGlzcGxheT4NCiAgPC9zaWduYWxkaXNwbGF5cz4NCiAgPHNpZ25hbHNlcXVlbmNlcz4NCiAgICA8c2lnbmFsc2VxdWVuY2UgaWQ9IjEiIG5hbWU9IlBlcm1hbmVudCBSZWQiPg0KICAgICAgPHN0YXRlIGRpc3BsYXk9IjEiIGlzRml4ZWREdXJhdGlvbj0iZmFsc2UiIGlzQ2xvc2VkPSJ0cnVlIiBkZWZhdWx0RHVyYXRpb249IjAiIC8+DQogICAgPC9zaWduYWxzZXF1ZW5jZT4NCiAgICA8c2lnbmFsc2VxdWVuY2UgaWQ9IjMiIG5hbWU9IlJlZC1SZWQvQW1iZXItR3JlZW4tQW1iZXIiPg0KICAgICAgPHN0YXRlIGRpc3BsYXk9IjEiIGlzRml4ZWREdXJhdGlvbj0iZmFsc2UiIGlzQ2xvc2VkPSJ0cnVlIiBkZWZhdWx0RHVyYXRpb249IjEwMDAiIC8+DQogICAgICA8c3RhdGUgZGlzcGxheT0iMiIgaXNGaXhlZER1cmF0aW9uPSJ0cnVlIiBpc0Nsb3NlZD0idHJ1ZSIgZGVmYXVsdER1cmF0aW9uPSIxMDAwIiAvPg0KICAgICAgPHN0YXRlIGRpc3BsYXk9IjMiIGlzRml4ZWREdXJhdGlvbj0iZmFsc2UiIGlzQ2xvc2VkPSJmYWxzZSIgZGVmYXVsdER1cmF0aW9uPSI1MDAwIiAvPg0KICAgICAgPHN0YXRlIGRpc3BsYXk9IjQiIGlzRml4ZWREdXJhdGlvbj0idHJ1ZSIgaXNDbG9zZWQ9InRydWUiIGRlZmF1bHREdXJhdGlvbj0iMzAwMCIgLz4NCiAgICA8L3NpZ25hbHNlcXVlbmNlPg0KICAgIDxzaWduYWxzZXF1ZW5jZSBpZD0iNyIgbmFtZT0iUmVkLUdyZWVuLUFtYmVyIj4NCiAgICAgIDxzdGF0ZSBkaXNwbGF5PSIxIiBpc0ZpeGVkRHVyYXRpb249ImZhbHNlIiBpc0Nsb3NlZD0idHJ1ZSIgZGVmYXVsdER1cmF0aW9uPSIxMDAwIiAvPg0KICAgICAgPHN0YXRlIGRpc3BsYXk9IjMiIGlzRml4ZWREdXJhdGlvbj0iZmFsc2UiIGlzQ2xvc2VkPSJmYWxzZSIgZGVmYXVsdER1cmF0aW9uPSI1MDAwIiAvPg0KICAgICAgPHN0YXRlIGRpc3BsYXk9IjQiIGlzRml4ZWREdXJhdGlvbj0idHJ1ZSIgaXNDbG9zZWQ9InRydWUiIGRlZmF1bHREdXJhdGlvbj0iMzAwMCIgLz4NCiAgICA8L3NpZ25hbHNlcXVlbmNlPg0KICA8L3NpZ25hbHNlcXVlbmNlcz4NCiAgPHNncz4NCiAgICA8c2cgaWQ9IjEiIG5hbWU9IlIxIiBkZWZhdWx0U2lnbmFsU2VxdWVuY2U9IjciPg0KICAgICAgPGRlZmF1bHREdXJhdGlvbnM+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMSIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMyIgZHVyYXRpb249IjUwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iNCIgZHVyYXRpb249IjMwMDAiIC8+DQogICAgICA8L2RlZmF1bHREdXJhdGlvbnM+DQogICAgPC9zZz4NCiAgICA8c2cgaWQ9IjIiIG5hbWU9IlIyIiBkZWZhdWx0U2lnbmFsU2VxdWVuY2U9IjciPg0KICAgICAgPGRlZmF1bHREdXJhdGlvbnM+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMSIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMyIgZHVyYXRpb249IjUwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iNCIgZHVyYXRpb249IjMwMDAiIC8+DQogICAgICA8L2RlZmF1bHREdXJhdGlvbnM+DQogICAgPC9zZz4NCiAgICA8c2cgaWQ9IjMiIG5hbWU9IlIzIiBkZWZhdWx0U2lnbmFsU2VxdWVuY2U9IjciPg0KICAgICAgPGRlZmF1bHREdXJhdGlvbnM+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMSIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMyIgZHVyYXRpb249IjUwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iNCIgZHVyYXRpb249IjMwMDAiIC8+DQogICAgICA8L2RlZmF1bHREdXJhdGlvbnM+DQogICAgPC9zZz4NCiAgICA8c2cgaWQ9IjQiIG5hbWU9IlI0IiBkZWZhdWx0U2lnbmFsU2VxdWVuY2U9IjciPg0KICAgICAgPGRlZmF1bHREdXJhdGlvbnM+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMSIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMyIgZHVyYXRpb249IjUwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iNCIgZHVyYXRpb249IjMwMDAiIC8+DQogICAgICA8L2RlZmF1bHREdXJhdGlvbnM+DQogICAgPC9zZz4NCiAgICA8c2cgaWQ9IjUiIG5hbWU9IlI1IiBkZWZhdWx0U2lnbmFsU2VxdWVuY2U9IjMiPg0KICAgICAgPGRlZmF1bHREdXJhdGlvbnM+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMSIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMiIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMyIgZHVyYXRpb249IjUwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iNCIgZHVyYXRpb249IjMwMDAiIC8+DQogICAgICA8L2RlZmF1bHREdXJhdGlvbnM+DQogICAgPC9zZz4NCiAgICA8c2cgaWQ9IjYiIG5hbWU9IlI2IiBkZWZhdWx0U2lnbmFsU2VxdWVuY2U9IjMiPg0KICAgICAgPGRlZmF1bHREdXJhdGlvbnM+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMSIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMiIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMyIgZHVyYXRpb249IjUwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iNCIgZHVyYXRpb249IjMwMDAiIC8+DQogICAgICA8L2RlZmF1bHREdXJhdGlvbnM+DQogICAgPC9zZz4NCiAgICA8c2cgaWQ9IjciIG5hbWU9IlI3IiBkZWZhdWx0U2lnbmFsU2VxdWVuY2U9IjMiPg0KICAgICAgPGRlZmF1bHREdXJhdGlvbnM+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMSIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMiIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMyIgZHVyYXRpb249IjUwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iNCIgZHVyYXRpb249IjMwMDAiIC8+DQogICAgICA8L2RlZmF1bHREdXJhdGlvbnM+DQogICAgPC9zZz4NCiAgICA8c2cgaWQ9IjgiIG5hbWU9IlI4IiBkZWZhdWx0U2lnbmFsU2VxdWVuY2U9IjMiPg0KICAgICAgPGRlZmF1bHREdXJhdGlvbnM+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMSIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMiIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMyIgZHVyYXRpb249IjUwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iNCIgZHVyYXRpb249IjMwMDAiIC8+DQogICAgICA8L2RlZmF1bHREdXJhdGlvbnM+DQogICAgPC9zZz4NCiAgPC9zZ3M+DQogIDxpbnRlcmdyZWVubWF0cmljZXM+DQogICAgPGludGVyZ3JlZW5tYXRyaXggaWQ9IjEiIG5hbWU9IkludGVyZ3JlZW4gbWF0cml4IDEiPg0KICAgICAgPGludGVyZ3JlZW4gY2xlYXJpbmdzZz0iMSIgZW50ZXJpbmdzZz0iMiIgdmFsdWU9IjUwMDAiIC8+DQogICAgICA8aW50ZXJncmVlbiBjbGVhcmluZ3NnPSIyIiBlbnRlcmluZ3NnPSIxIiB2YWx1ZT0iMCIgLz4NCiAgICAgIDxpbnRlcmdyZWVuIGNsZWFyaW5nc2c9IjIiIGVudGVyaW5nc2c9IjMiIHZhbHVlPSI1MDAwIiAvPg0KICAgICAgPGludGVyZ3JlZW4gY2xlYXJpbmdzZz0iMyIgZW50ZXJpbmdzZz0iMiIgdmFsdWU9IjAiIC8+DQogICAgICA8aW50ZXJncmVlbiBjbGVhcmluZ3NnPSIzIiBlbnRlcmluZ3NnPSI0IiB2YWx1ZT0iNTAwMCIgLz4NCiAgICAgIDxpbnRlcmdyZWVuIGNsZWFyaW5nc2c9IjQiIGVudGVyaW5nc2c9IjMiIHZhbHVlPSIwIiAvPg0KICAgICAgPGludGVyZ3JlZW4gY2xlYXJpbmdzZz0iNCIgZW50ZXJpbmdzZz0iMSIgdmFsdWU9IjUwMDAiIC8+DQogICAgICA8aW50ZXJncmVlbiBjbGVhcmluZ3NnPSIxIiBlbnRlcmluZ3NnPSI0IiB2YWx1ZT0iMCIgLz4NCiAgICA8L2ludGVyZ3JlZW5tYXRyaXg+DQogIDwvaW50ZXJncmVlbm1hdHJpY2VzPg0KICA8cHJvZ3M+DQogICAgPHByb2cgaWQ9IjEiIGN5Y2xldGltZT0iMTIwMDAwIiBzd2l0Y2hwb2ludD0iMCIgb2Zmc2V0PSIwIiBpbnRlcmdyZWVucz0iMCIgZml0bmVzcz0iMC4wMDAwMDAiIHZlaGljbGVDb3VudD0iMCIgbmFtZT0iU2lnbmFsIHByb2dyYW0gMSI+DQogICAgICA8c2dzPg0KICAgICAgICA8c2cgc2dfaWQ9IjEiIHNpZ25hbF9zZXF1ZW5jZT0iNyI+DQogICAgICAgICAgPGNtZHM+DQogICAgICAgICAgICA8Y21kIGRpc3BsYXk9IjMiIGJlZ2luPSIxMDAwIiAvPg0KICAgICAgICAgICAgPGNtZCBkaXNwbGF5PSIxIiBiZWdpbj0iMjkwMDAiIC8+DQogICAgICAgICAgPC9jbWRzPg0KICAgICAgICAgIDxmaXhlZHN0YXRlcz4NCiAgICAgICAgICAgIDxmaXhlZHN0YXRlIGRpc3BsYXk9IjQiIGR1cmF0aW9uPSIzMDAwIiAvPg0KICAgICAgICAgIDwvZml4ZWRzdGF0ZXM+DQogICAgICAgIDwvc2c+DQogICAgICAgIDxzZyBzZ19pZD0iMiIgc2lnbmFsX3NlcXVlbmNlPSI3Ij4NCiAgICAgICAgICA8Y21kcz4NCiAgICAgICAgICAgIDxjbWQgZGlzcGxheT0iMyIgYmVnaW49IjMxMDAwIiAvPg0KICAgICAgICAgICAgPGNtZCBkaXNwbGF5PSIxIiBiZWdpbj0iNTkwMDAiIC8+DQogICAgICAgICAgPC9jbWRzPg0KICAgICAgICAgIDxmaXhlZHN0YXRlcz4NCiAgICAgICAgICAgIDxmaXhlZHN0YXRlIGRpc3BsYXk9IjQiIGR1cmF0aW9uPSIzMDAwIiAvPg0KICAgICAgICAgIDwvZml4ZWRzdGF0ZXM+DQogICAgICAgIDwvc2c+DQogICAgICAgIDxzZyBzZ19pZD0iMyIgc2lnbmFsX3NlcXVlbmNlPSI3Ij4NCiAgICAgICAgICA8Y21kcz4NCiAgICAgICAgICAgIDxjbWQgZGlzcGxheT0iMyIgYmVnaW49IjYxMDAwIiAvPg0KICAgICAgICAgICAgPGNtZCBkaXNwbGF5PSIxIiBiZWdpbj0iODkwMDAiIC8+DQogICAgICAgICAgPC9jbWRzPg0KICAgICAgICAgIDxmaXhlZHN0YXRlcz4NCiAgICAgICAgICAgIDxmaXhlZHN0YXRlIGRpc3BsYXk9IjQiIGR1cmF0aW9uPSIzMDAwIiAvPg0KICAgICAgICAgIDwvZml4ZWRzdGF0ZXM+DQogICAgICAgIDwvc2c+DQogICAgICAgIDxzZyBzZ19pZD0iNCIgc2lnbmFsX3NlcXVlbmNlPSI3Ij4NCiAgICAgICAgICA8Y21kcz4NCiAgICAgICAgICAgIDxjbWQgZGlzcGxheT0iMyIgYmVnaW49IjkxMDAwIiAvPg0KICAgICAgICAgICAgPGNtZCBkaXNwbGF5PSIxIiBiZWdpbj0iMTE5MDAwIiAvPg0KICAgICAgICAgIDwvY21kcz4NCiAgICAgICAgICA8Zml4ZWRzdGF0ZXM+DQogICAgICAgICAgICA8Zml4ZWRzdGF0ZSBkaXNwbGF5PSI0IiBkdXJhdGlvbj0iMzAwMCIgLz4NCiAgICAgICAgICA8L2ZpeGVkc3RhdGVzPg0KICAgICAgICA8L3NnPg0KICAgICAgICA8c2cgc2dfaWQ9IjUiIHNpZ25hbF9zZXF1ZW5jZT0iMSI+DQogICAgICAgICAgPGNtZHM+DQogICAgICAgICAgICA8Y21kIGRpc3BsYXk9IjEiIGJlZ2luPSIwIiAvPg0KICAgICAgICAgIDwvY21kcz4NCiAgICAgICAgICA8Zml4ZWRzdGF0ZXMgLz4NCiAgICAgICAgPC9zZz4NCiAgICAgICAgPHNnIHNnX2lkPSI2IiBzaWduYWxfc2VxdWVuY2U9IjEiPg0KICAgICAgICAgIDxjbWRzPg0KICAgICAgICAgICAgPGNtZCBkaXNwbGF5PSIxIiBiZWdpbj0iMCIgLz4NCiAgICAgICAgICA8L2NtZHM+DQogICAgICAgICAgPGZpeGVkc3RhdGVzIC8+DQogICAgICAgIDwvc2c+DQogICAgICAgIDxzZyBzZ19pZD0iNyIgc2lnbmFsX3NlcXVlbmNlPSIxIj4NCiAgICAgICAgICA8Y21kcz4NCiAgICAgICAgICAgIDxjbWQgZGlzcGxheT0iMSIgYmVnaW49IjAiIC8+DQogICAgICAgICAgPC9jbWRzPg0KICAgICAgICAgIDxmaXhlZHN0YXRlcyAvPg0KICAgICAgICA8L3NnPg0KICAgICAgICA8c2cgc2dfaWQ9IjgiIHNpZ25hbF9zZXF1ZW5jZT0iMSI+DQogICAgICAgICAgPGNtZHM+DQogICAgICAgICAgICA8Y21kIGRpc3BsYXk9IjEiIGJlZ2luPSIwIiAvPg0KICAgICAgICAgIDwvY21kcz4NCiAgICAgICAgICA8Zml4ZWRzdGF0ZXMgLz4NCiAgICAgICAgPC9zZz4NCiAgICAgIDwvc2dzPg0KICAgIDwvcHJvZz4NCiAgPC9wcm9ncz4NCiAgPHN0YWdlcyAvPg0KICA8aW50ZXJzdGFnZVByb2dzIC8+DQogIDxzdGFnZVByb2dzIC8+DQogIDxkYWlseVByb2dMaXN0cyAvPg0KPC9zYz4=" name="" no="1" offset="0" progFile="#exe#vissig_controller.dll" progNo="1" scDetRecLabelDet="PORTNUMBER" scDetRecLabelSG="NUMBER" scDetRecShortNam="false" sigTmsTabAutoConfig="true" sigTmsTabLabelDet="PORTNUMBER" sigTmsTabLabelSG="NUMBER" supplyFile1="#exe#vissig.config" supplyFile2="" supplyFile3="" type="FIXEDTIME">
+		<signalController active="true" cycTm="0" cycTmIsVar="false" debug="false" guiFile="#exe#vissig_gui.dll" intSupplyData="PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzYyB2ZXJzaW9uPSIyMDIwMDEiIGlkPSIxIiBuYW1lPSIiIGZyZXF1ZW5jeT0iMSIgc3RlcHM9IjAiIGRlZmF1bHRJbnRlcmdyZWVuTWF0cml4PSIwIiBpbnRlcnN0YWdlc1VzaW5nTWluRHVyYXRpb25zPSJ0cnVlIiBjaGVja1N1bT0iMjQwNjcxNjA0NCI+DQogIDxzaWduYWxkaXNwbGF5cz4NCiAgICA8ZGlzcGxheSBpZD0iMSIgbmFtZT0iUmVkIiBzdGF0ZT0iUkVEIj4NCiAgICAgIDxwYXR0ZXJucz4NCiAgICAgICAgPHBhdHRlcm4gcGF0dGVybj0iTUlOVVMiIGNvbG9yPSIjRkYwMDAwIiBpc0JvbGQ9InRydWUiIC8+DQogICAgICA8L3BhdHRlcm5zPg0KICAgIDwvZGlzcGxheT4NCiAgICA8ZGlzcGxheSBpZD0iMiIgbmFtZT0iUmVkL0FtYmVyIiBzdGF0ZT0iUkVEQU1CRVIiPg0KICAgICAgPHBhdHRlcm5zPg0KICAgICAgICA8cGF0dGVybiBwYXR0ZXJuPSJGUkFNRSIgY29sb3I9IiNDQ0NDMDAiIGlzQm9sZD0idHJ1ZSIgLz4NCiAgICAgICAgPHBhdHRlcm4gcGF0dGVybj0iU0xBU0giIGNvbG9yPSIjQ0MwMDAwIiBpc0JvbGQ9ImZhbHNlIiAvPg0KICAgICAgICA8cGF0dGVybiBwYXR0ZXJuPSJNSU5VUyIgY29sb3I9IiNDQzAwMDAiIGlzQm9sZD0iZmFsc2UiIC8+DQogICAgICA8L3BhdHRlcm5zPg0KICAgIDwvZGlzcGxheT4NCiAgICA8ZGlzcGxheSBpZD0iMyIgbmFtZT0iR3JlZW4iIHN0YXRlPSJHUkVFTiI+DQogICAgICA8cGF0dGVybnM+DQogICAgICAgIDxwYXR0ZXJuIHBhdHRlcm49IkZSQU1FIiBjb2xvcj0iIzAwQ0MwMCIgaXNCb2xkPSJ0cnVlIiAvPg0KICAgICAgICA8cGF0dGVybiBwYXR0ZXJuPSJTT0xJRCIgY29sb3I9IiMwMENDMDAiIGlzQm9sZD0iZmFsc2UiIC8+DQogICAgICA8L3BhdHRlcm5zPg0KICAgIDwvZGlzcGxheT4NCiAgICA8ZGlzcGxheSBpZD0iNCIgbmFtZT0iQW1iZXIiIHN0YXRlPSJBTUJFUiI+DQogICAgICA8cGF0dGVybnM+DQogICAgICAgIDxwYXR0ZXJuIHBhdHRlcm49IkZSQU1FIiBjb2xvcj0iI0NDQ0MwMCIgaXNCb2xkPSJ0cnVlIiAvPg0KICAgICAgICA8cGF0dGVybiBwYXR0ZXJuPSJTTEFTSCIgY29sb3I9IiNDQ0NDMDAiIGlzQm9sZD0iZmFsc2UiIC8+DQogICAgICA8L3BhdHRlcm5zPg0KICAgIDwvZGlzcGxheT4NCiAgPC9zaWduYWxkaXNwbGF5cz4NCiAgPHNpZ25hbHNlcXVlbmNlcz4NCiAgICA8c2lnbmFsc2VxdWVuY2UgaWQ9IjEiIG5hbWU9IlBlcm1hbmVudCBSZWQiPg0KICAgICAgPHN0YXRlIGRpc3BsYXk9IjEiIGlzRml4ZWREdXJhdGlvbj0iZmFsc2UiIGlzQ2xvc2VkPSJ0cnVlIiBkZWZhdWx0RHVyYXRpb249IjAiIC8+DQogICAgPC9zaWduYWxzZXF1ZW5jZT4NCiAgICA8c2lnbmFsc2VxdWVuY2UgaWQ9IjMiIG5hbWU9IlJlZC1SZWQvQW1iZXItR3JlZW4tQW1iZXIiPg0KICAgICAgPHN0YXRlIGRpc3BsYXk9IjEiIGlzRml4ZWREdXJhdGlvbj0iZmFsc2UiIGlzQ2xvc2VkPSJ0cnVlIiBkZWZhdWx0RHVyYXRpb249IjEwMDAiIC8+DQogICAgICA8c3RhdGUgZGlzcGxheT0iMiIgaXNGaXhlZER1cmF0aW9uPSJ0cnVlIiBpc0Nsb3NlZD0idHJ1ZSIgZGVmYXVsdER1cmF0aW9uPSIxMDAwIiAvPg0KICAgICAgPHN0YXRlIGRpc3BsYXk9IjMiIGlzRml4ZWREdXJhdGlvbj0iZmFsc2UiIGlzQ2xvc2VkPSJmYWxzZSIgZGVmYXVsdER1cmF0aW9uPSI1MDAwIiAvPg0KICAgICAgPHN0YXRlIGRpc3BsYXk9IjQiIGlzRml4ZWREdXJhdGlvbj0idHJ1ZSIgaXNDbG9zZWQ9InRydWUiIGRlZmF1bHREdXJhdGlvbj0iMzAwMCIgLz4NCiAgICA8L3NpZ25hbHNlcXVlbmNlPg0KICAgIDxzaWduYWxzZXF1ZW5jZSBpZD0iNyIgbmFtZT0iUmVkLUdyZWVuLUFtYmVyIj4NCiAgICAgIDxzdGF0ZSBkaXNwbGF5PSIxIiBpc0ZpeGVkRHVyYXRpb249ImZhbHNlIiBpc0Nsb3NlZD0idHJ1ZSIgZGVmYXVsdER1cmF0aW9uPSIxMDAwIiAvPg0KICAgICAgPHN0YXRlIGRpc3BsYXk9IjMiIGlzRml4ZWREdXJhdGlvbj0iZmFsc2UiIGlzQ2xvc2VkPSJmYWxzZSIgZGVmYXVsdER1cmF0aW9uPSI1MDAwIiAvPg0KICAgICAgPHN0YXRlIGRpc3BsYXk9IjQiIGlzRml4ZWREdXJhdGlvbj0idHJ1ZSIgaXNDbG9zZWQ9InRydWUiIGRlZmF1bHREdXJhdGlvbj0iMzAwMCIgLz4NCiAgICA8L3NpZ25hbHNlcXVlbmNlPg0KICA8L3NpZ25hbHNlcXVlbmNlcz4NCiAgPHNncz4NCiAgICA8c2cgaWQ9IjEiIG5hbWU9IlIxIiBkZWZhdWx0U2lnbmFsU2VxdWVuY2U9IjciPg0KICAgICAgPGRlZmF1bHREdXJhdGlvbnM+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMSIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMyIgZHVyYXRpb249IjUwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iNCIgZHVyYXRpb249IjMwMDAiIC8+DQogICAgICA8L2RlZmF1bHREdXJhdGlvbnM+DQogICAgPC9zZz4NCiAgICA8c2cgaWQ9IjIiIG5hbWU9IlIyIiBkZWZhdWx0U2lnbmFsU2VxdWVuY2U9IjciPg0KICAgICAgPGRlZmF1bHREdXJhdGlvbnM+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMSIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMyIgZHVyYXRpb249IjUwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iNCIgZHVyYXRpb249IjMwMDAiIC8+DQogICAgICA8L2RlZmF1bHREdXJhdGlvbnM+DQogICAgPC9zZz4NCiAgICA8c2cgaWQ9IjMiIG5hbWU9IlIzIiBkZWZhdWx0U2lnbmFsU2VxdWVuY2U9IjciPg0KICAgICAgPGRlZmF1bHREdXJhdGlvbnM+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMSIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMyIgZHVyYXRpb249IjUwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iNCIgZHVyYXRpb249IjMwMDAiIC8+DQogICAgICA8L2RlZmF1bHREdXJhdGlvbnM+DQogICAgPC9zZz4NCiAgICA8c2cgaWQ9IjQiIG5hbWU9IlI0IiBkZWZhdWx0U2lnbmFsU2VxdWVuY2U9IjciPg0KICAgICAgPGRlZmF1bHREdXJhdGlvbnM+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMSIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMyIgZHVyYXRpb249IjUwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iNCIgZHVyYXRpb249IjMwMDAiIC8+DQogICAgICA8L2RlZmF1bHREdXJhdGlvbnM+DQogICAgPC9zZz4NCiAgICA8c2cgaWQ9IjUiIG5hbWU9IlI1IiBkZWZhdWx0U2lnbmFsU2VxdWVuY2U9IjMiPg0KICAgICAgPGRlZmF1bHREdXJhdGlvbnM+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMSIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMiIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMyIgZHVyYXRpb249IjUwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iNCIgZHVyYXRpb249IjMwMDAiIC8+DQogICAgICA8L2RlZmF1bHREdXJhdGlvbnM+DQogICAgPC9zZz4NCiAgICA8c2cgaWQ9IjciIG5hbWU9IlI3IiBkZWZhdWx0U2lnbmFsU2VxdWVuY2U9IjMiPg0KICAgICAgPGRlZmF1bHREdXJhdGlvbnM+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMSIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMiIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMyIgZHVyYXRpb249IjUwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iNCIgZHVyYXRpb249IjMwMDAiIC8+DQogICAgICA8L2RlZmF1bHREdXJhdGlvbnM+DQogICAgPC9zZz4NCiAgICA8c2cgaWQ9IjgiIG5hbWU9IlI4IiBkZWZhdWx0U2lnbmFsU2VxdWVuY2U9IjMiPg0KICAgICAgPGRlZmF1bHREdXJhdGlvbnM+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMSIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMiIgZHVyYXRpb249IjEwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iMyIgZHVyYXRpb249IjUwMDAiIC8+DQogICAgICAgIDxkZWZhdWx0RHVyYXRpb24gZGlzcGxheT0iNCIgZHVyYXRpb249IjMwMDAiIC8+DQogICAgICA8L2RlZmF1bHREdXJhdGlvbnM+DQogICAgPC9zZz4NCiAgPC9zZ3M+DQogIDxpbnRlcmdyZWVubWF0cmljZXM+DQogICAgPGludGVyZ3JlZW5tYXRyaXggaWQ9IjEiIG5hbWU9IkludGVyZ3JlZW4gbWF0cml4IDEiPg0KICAgICAgPGludGVyZ3JlZW4gY2xlYXJpbmdzZz0iMSIgZW50ZXJpbmdzZz0iMiIgdmFsdWU9IjUwMDAiIC8+DQogICAgICA8aW50ZXJncmVlbiBjbGVhcmluZ3NnPSIyIiBlbnRlcmluZ3NnPSIxIiB2YWx1ZT0iMCIgLz4NCiAgICAgIDxpbnRlcmdyZWVuIGNsZWFyaW5nc2c9IjIiIGVudGVyaW5nc2c9IjMiIHZhbHVlPSI1MDAwIiAvPg0KICAgICAgPGludGVyZ3JlZW4gY2xlYXJpbmdzZz0iMyIgZW50ZXJpbmdzZz0iMiIgdmFsdWU9IjAiIC8+DQogICAgICA8aW50ZXJncmVlbiBjbGVhcmluZ3NnPSIzIiBlbnRlcmluZ3NnPSI0IiB2YWx1ZT0iNTAwMCIgLz4NCiAgICAgIDxpbnRlcmdyZWVuIGNsZWFyaW5nc2c9IjQiIGVudGVyaW5nc2c9IjMiIHZhbHVlPSIwIiAvPg0KICAgICAgPGludGVyZ3JlZW4gY2xlYXJpbmdzZz0iNCIgZW50ZXJpbmdzZz0iMSIgdmFsdWU9IjUwMDAiIC8+DQogICAgICA8aW50ZXJncmVlbiBjbGVhcmluZ3NnPSIxIiBlbnRlcmluZ3NnPSI0IiB2YWx1ZT0iMCIgLz4NCiAgICA8L2ludGVyZ3JlZW5tYXRyaXg+DQogIDwvaW50ZXJncmVlbm1hdHJpY2VzPg0KICA8cHJvZ3M+DQogICAgPHByb2cgaWQ9IjEiIGN5Y2xldGltZT0iMTIwMDAwIiBzd2l0Y2hwb2ludD0iMCIgb2Zmc2V0PSIwIiBpbnRlcmdyZWVucz0iMCIgZml0bmVzcz0iMC4wMDAwMDAiIHZlaGljbGVDb3VudD0iMCIgbmFtZT0iU2lnbmFsIHByb2dyYW0gMSI+DQogICAgICA8c2dzPg0KICAgICAgICA8c2cgc2dfaWQ9IjEiIHNpZ25hbF9zZXF1ZW5jZT0iNyI+DQogICAgICAgICAgPGNtZHM+DQogICAgICAgICAgICA8Y21kIGRpc3BsYXk9IjMiIGJlZ2luPSIxMDAwIiAvPg0KICAgICAgICAgICAgPGNtZCBkaXNwbGF5PSIxIiBiZWdpbj0iMjkwMDAiIC8+DQogICAgICAgICAgPC9jbWRzPg0KICAgICAgICAgIDxmaXhlZHN0YXRlcz4NCiAgICAgICAgICAgIDxmaXhlZHN0YXRlIGRpc3BsYXk9IjQiIGR1cmF0aW9uPSIzMDAwIiAvPg0KICAgICAgICAgIDwvZml4ZWRzdGF0ZXM+DQogICAgICAgIDwvc2c+DQogICAgICAgIDxzZyBzZ19pZD0iMiIgc2lnbmFsX3NlcXVlbmNlPSI3Ij4NCiAgICAgICAgICA8Y21kcz4NCiAgICAgICAgICAgIDxjbWQgZGlzcGxheT0iMyIgYmVnaW49IjMxMDAwIiAvPg0KICAgICAgICAgICAgPGNtZCBkaXNwbGF5PSIxIiBiZWdpbj0iNTkwMDAiIC8+DQogICAgICAgICAgPC9jbWRzPg0KICAgICAgICAgIDxmaXhlZHN0YXRlcz4NCiAgICAgICAgICAgIDxmaXhlZHN0YXRlIGRpc3BsYXk9IjQiIGR1cmF0aW9uPSIzMDAwIiAvPg0KICAgICAgICAgIDwvZml4ZWRzdGF0ZXM+DQogICAgICAgIDwvc2c+DQogICAgICAgIDxzZyBzZ19pZD0iMyIgc2lnbmFsX3NlcXVlbmNlPSI3Ij4NCiAgICAgICAgICA8Y21kcz4NCiAgICAgICAgICAgIDxjbWQgZGlzcGxheT0iMyIgYmVnaW49IjYxMDAwIiAvPg0KICAgICAgICAgICAgPGNtZCBkaXNwbGF5PSIxIiBiZWdpbj0iODkwMDAiIC8+DQogICAgICAgICAgPC9jbWRzPg0KICAgICAgICAgIDxmaXhlZHN0YXRlcz4NCiAgICAgICAgICAgIDxmaXhlZHN0YXRlIGRpc3BsYXk9IjQiIGR1cmF0aW9uPSIzMDAwIiAvPg0KICAgICAgICAgIDwvZml4ZWRzdGF0ZXM+DQogICAgICAgIDwvc2c+DQogICAgICAgIDxzZyBzZ19pZD0iNCIgc2lnbmFsX3NlcXVlbmNlPSI3Ij4NCiAgICAgICAgICA8Y21kcz4NCiAgICAgICAgICAgIDxjbWQgZGlzcGxheT0iMyIgYmVnaW49IjkxMDAwIiAvPg0KICAgICAgICAgICAgPGNtZCBkaXNwbGF5PSIxIiBiZWdpbj0iMTE5MDAwIiAvPg0KICAgICAgICAgIDwvY21kcz4NCiAgICAgICAgICA8Zml4ZWRzdGF0ZXM+DQogICAgICAgICAgICA8Zml4ZWRzdGF0ZSBkaXNwbGF5PSI0IiBkdXJhdGlvbj0iMzAwMCIgLz4NCiAgICAgICAgICA8L2ZpeGVkc3RhdGVzPg0KICAgICAgICA8L3NnPg0KICAgICAgICA8c2cgc2dfaWQ9IjUiIHNpZ25hbF9zZXF1ZW5jZT0iMSI+DQogICAgICAgICAgPGNtZHM+DQogICAgICAgICAgICA8Y21kIGRpc3BsYXk9IjEiIGJlZ2luPSIwIiAvPg0KICAgICAgICAgIDwvY21kcz4NCiAgICAgICAgICA8Zml4ZWRzdGF0ZXMgLz4NCiAgICAgICAgPC9zZz4NCiAgICAgICAgPHNnIHNnX2lkPSI3IiBzaWduYWxfc2VxdWVuY2U9IjEiPg0KICAgICAgICAgIDxjbWRzPg0KICAgICAgICAgICAgPGNtZCBkaXNwbGF5PSIxIiBiZWdpbj0iMCIgLz4NCiAgICAgICAgICA8L2NtZHM+DQogICAgICAgICAgPGZpeGVkc3RhdGVzIC8+DQogICAgICAgIDwvc2c+DQogICAgICAgIDxzZyBzZ19pZD0iOCIgc2lnbmFsX3NlcXVlbmNlPSIxIj4NCiAgICAgICAgICA8Y21kcz4NCiAgICAgICAgICAgIDxjbWQgZGlzcGxheT0iMSIgYmVnaW49IjAiIC8+DQogICAgICAgICAgPC9jbWRzPg0KICAgICAgICAgIDxmaXhlZHN0YXRlcyAvPg0KICAgICAgICA8L3NnPg0KICAgICAgPC9zZ3M+DQogICAgPC9wcm9nPg0KICA8L3Byb2dzPg0KICA8c3RhZ2VzIC8+DQogIDxpbnRlcnN0YWdlUHJvZ3MgLz4NCiAgPHN0YWdlUHJvZ3MgLz4NCiAgPGRhaWx5UHJvZ0xpc3RzIC8+DQo8L3NjPg==" name="" no="1" offset="0" progFile="#exe#vissig_controller.dll" progNo="1" scDetRecLabelDet="PORTNUMBER" scDetRecLabelSG="NUMBER" scDetRecShortNam="false" sigTmsTabAutoConfig="true" sigTmsTabLabelDet="PORTNUMBER" sigTmsTabLabelSG="NUMBER" supplyFile1="#exe#vissig.config" supplyFile2="" supplyFile3="" type="FIXEDTIME">
 			<rampMeterPara metEvalInt="60" metRateQDisp="0.25" occupDes="0.25" occupQDispAct="0.5" occupQDispDeact="0.1" regPara="0.019444444444444441"/>
 			<sgs>
 				<signalGroup actuationType="UNDEFINED" amber="3" callDetPortNo="0" chkOutDetPortNo="0" clearTm="0" endGreen="0" endRed="0" greenFlsh="0" maxGreen="0" minGreen="5" minRed="1" name="R1" no="1" redAmber="0" type="NORMAL"/>
@@ -2100,9 +2053,8 @@
 				<signalGroup actuationType="UNDEFINED" amber="3" callDetPortNo="0" chkOutDetPortNo="0" clearTm="0" endGreen="0" endRed="0" greenFlsh="0" maxGreen="0" minGreen="5" minRed="1" name="R3" no="3" redAmber="0" type="NORMAL"/>
 				<signalGroup actuationType="UNDEFINED" amber="3" callDetPortNo="0" chkOutDetPortNo="0" clearTm="0" endGreen="0" endRed="0" greenFlsh="0" maxGreen="0" minGreen="5" minRed="1" name="R4" no="4" redAmber="0" type="NORMAL"/>
 				<signalGroup actuationType="UNDEFINED" amber="3" callDetPortNo="0" chkOutDetPortNo="0" clearTm="0" endGreen="0" endRed="0" greenFlsh="0" maxGreen="0" minGreen="5" minRed="1" name="R5" no="5" redAmber="1" type="NORMAL"/>
-				<signalGroup actuationType="UNDEFINED" amber="3" callDetPortNo="0" chkOutDetPortNo="0" clearTm="0" endGreen="0" endRed="0" greenFlsh="0" maxGreen="0" minGreen="5" minRed="1" name="R6" no="6" redAmber="1" type="NORMAL"/>
-				<signalGroup actuationType="UNDEFINED" amber="3" callDetPortNo="0" chkOutDetPortNo="0" clearTm="0" endGreen="0" endRed="0" greenFlsh="0" maxGreen="0" minGreen="5" minRed="1" name="R7" no="7" redAmber="1" type="NORMAL"/>
-				<signalGroup actuationType="UNDEFINED" amber="3" callDetPortNo="0" chkOutDetPortNo="0" clearTm="0" endGreen="0" endRed="0" greenFlsh="0" maxGreen="0" minGreen="5" minRed="1" name="R8" no="8" redAmber="1" type="NORMAL"/>
+				<signalGroup actuationType="UNDEFINED" amber="3" callDetPortNo="0" chkOutDetPortNo="0" clearTm="0" endGreen="0" endRed="0" greenFlsh="0" maxGreen="0" minGreen="5" minRed="1" name="R6" no="7" redAmber="1" type="NORMAL"/>
+				<signalGroup actuationType="UNDEFINED" amber="3" callDetPortNo="0" chkOutDetPortNo="0" clearTm="0" endGreen="0" endRed="0" greenFlsh="0" maxGreen="0" minGreen="5" minRed="1" name="R7" no="8" redAmber="1" type="NORMAL"/>
 			</sgs>
 			<sigTmsTabConfig>
 				<signalOutputConfigurationElement configName="SIGGRP" detPort="0" sg="1 1" title="" varNo="1" wttFilename=""/>
@@ -2110,9 +2062,36 @@
 				<signalOutputConfigurationElement configName="SIGGRP" detPort="0" sg="1 3" title="" varNo="3" wttFilename=""/>
 				<signalOutputConfigurationElement configName="SIGGRP" detPort="0" sg="1 4" title="" varNo="4" wttFilename=""/>
 				<signalOutputConfigurationElement configName="SIGGRP" detPort="0" sg="1 5" title="" varNo="5" wttFilename=""/>
-				<signalOutputConfigurationElement configName="SIGGRP" detPort="0" sg="1 6" title="" varNo="6" wttFilename=""/>
 				<signalOutputConfigurationElement configName="SIGGRP" detPort="0" sg="1 7" title="" varNo="7" wttFilename=""/>
 				<signalOutputConfigurationElement configName="SIGGRP" detPort="0" sg="1 8" title="" varNo="8" wttFilename=""/>
+			</sigTmsTabConfig>
+			<wttFiles>
+				<intObjectRef key="1"/>
+			</wttFiles>
+		</signalController>
+		<signalController active="true" cycTm="0" cycTmIsVar="false" debug="false" guiFile="#exe#vissig_gui.dll" intSupplyData="PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzYyB2ZXJzaW9uPSIyMDIwMDEiIGlkPSIyIiBuYW1lPSIiIGZyZXF1ZW5jeT0iMSIgc3RlcHM9IjAiIGRlZmF1bHRJbnRlcmdyZWVuTWF0cml4PSIwIiBpbnRlcnN0YWdlc1VzaW5nTWluRHVyYXRpb25zPSJ0cnVlIiBjaGVja1N1bT0iMzkwMDMyNzE5NCI+DQogIDxzaWduYWxkaXNwbGF5cz4NCiAgICA8ZGlzcGxheSBpZD0iMSIgbmFtZT0iUmVkIiBzdGF0ZT0iUkVEIj4NCiAgICAgIDxwYXR0ZXJucz4NCiAgICAgICAgPHBhdHRlcm4gcGF0dGVybj0iTUlOVVMiIGNvbG9yPSIjRkYwMDAwIiBpc0JvbGQ9InRydWUiIC8+DQogICAgICA8L3BhdHRlcm5zPg0KICAgIDwvZGlzcGxheT4NCiAgICA8ZGlzcGxheSBpZD0iMyIgbmFtZT0iR3JlZW4iIHN0YXRlPSJHUkVFTiI+DQogICAgICA8cGF0dGVybnM+DQogICAgICAgIDxwYXR0ZXJuIHBhdHRlcm49IkZSQU1FIiBjb2xvcj0iIzAwQ0MwMCIgaXNCb2xkPSJ0cnVlIiAvPg0KICAgICAgICA8cGF0dGVybiBwYXR0ZXJuPSJTT0xJRCIgY29sb3I9IiMwMENDMDAiIGlzQm9sZD0iZmFsc2UiIC8+DQogICAgICA8L3BhdHRlcm5zPg0KICAgIDwvZGlzcGxheT4NCiAgPC9zaWduYWxkaXNwbGF5cz4NCiAgPHNpZ25hbHNlcXVlbmNlcz4NCiAgICA8c2lnbmFsc2VxdWVuY2UgaWQ9IjQiIG5hbWU9IlJlZC1HcmVlbiI+DQogICAgICA8c3RhdGUgZGlzcGxheT0iMSIgaXNGaXhlZER1cmF0aW9uPSJmYWxzZSIgaXNDbG9zZWQ9InRydWUiIGRlZmF1bHREdXJhdGlvbj0iMTAwMCIgLz4NCiAgICAgIDxzdGF0ZSBkaXNwbGF5PSIzIiBpc0ZpeGVkRHVyYXRpb249ImZhbHNlIiBpc0Nsb3NlZD0iZmFsc2UiIGRlZmF1bHREdXJhdGlvbj0iNTAwMCIgLz4NCiAgICA8L3NpZ25hbHNlcXVlbmNlPg0KICA8L3NpZ25hbHNlcXVlbmNlcz4NCiAgPHNncz4NCiAgICA8c2cgaWQ9IjEiIG5hbWU9IjQiIGRlZmF1bHRTaWduYWxTZXF1ZW5jZT0iNCI+DQogICAgICA8ZGVmYXVsdER1cmF0aW9ucz4NCiAgICAgICAgPGRlZmF1bHREdXJhdGlvbiBkaXNwbGF5PSIxIiBkdXJhdGlvbj0iMTAwMCIgLz4NCiAgICAgICAgPGRlZmF1bHREdXJhdGlvbiBkaXNwbGF5PSIzIiBkdXJhdGlvbj0iNTAwMCIgLz4NCiAgICAgIDwvZGVmYXVsdER1cmF0aW9ucz4NCiAgICA8L3NnPg0KICAgIDxzZyBpZD0iMiIgbmFtZT0iNSIgZGVmYXVsdFNpZ25hbFNlcXVlbmNlPSI0Ij4NCiAgICAgIDxkZWZhdWx0RHVyYXRpb25zPg0KICAgICAgICA8ZGVmYXVsdER1cmF0aW9uIGRpc3BsYXk9IjEiIGR1cmF0aW9uPSIxMDAwIiAvPg0KICAgICAgICA8ZGVmYXVsdER1cmF0aW9uIGRpc3BsYXk9IjMiIGR1cmF0aW9uPSI1MDAwIiAvPg0KICAgICAgPC9kZWZhdWx0RHVyYXRpb25zPg0KICAgIDwvc2c+DQogIDwvc2dzPg0KICA8aW50ZXJncmVlbm1hdHJpY2VzPg0KICAgIDxpbnRlcmdyZWVubWF0cml4IGlkPSIxIiBuYW1lPSJJbnRlcmdyZWVuIG1hdHJpeCAxIiAvPg0KICA8L2ludGVyZ3JlZW5tYXRyaWNlcz4NCiAgPHByb2dzPg0KICAgIDxwcm9nIGlkPSIxIiBjeWNsZXRpbWU9IjYwMDAwIiBzd2l0Y2hwb2ludD0iMCIgb2Zmc2V0PSIwIiBpbnRlcmdyZWVucz0iMCIgZml0bmVzcz0iMC4wMDAwMDAiIHZlaGljbGVDb3VudD0iMCIgbmFtZT0iU2lnbmFsIHByb2dyYW0gMSI+DQogICAgICA8c2dzPg0KICAgICAgICA8c2cgc2dfaWQ9IjEiIHNpZ25hbF9zZXF1ZW5jZT0iNCI+DQogICAgICAgICAgPGNtZHM+DQogICAgICAgICAgICA8Y21kIGRpc3BsYXk9IjMiIGJlZ2luPSIxMDAwIiAvPg0KICAgICAgICAgICAgPGNtZCBkaXNwbGF5PSIxIiBiZWdpbj0iMzAwMDAiIC8+DQogICAgICAgICAgPC9jbWRzPg0KICAgICAgICAgIDxmaXhlZHN0YXRlcyAvPg0KICAgICAgICA8L3NnPg0KICAgICAgICA8c2cgc2dfaWQ9IjIiIHNpZ25hbF9zZXF1ZW5jZT0iNCI+DQogICAgICAgICAgPGNtZHM+DQogICAgICAgICAgICA8Y21kIGRpc3BsYXk9IjEiIGJlZ2luPSIwIiAvPg0KICAgICAgICAgICAgPGNtZCBkaXNwbGF5PSIzIiBiZWdpbj0iMzAwMDAiIC8+DQogICAgICAgICAgPC9jbWRzPg0KICAgICAgICAgIDxmaXhlZHN0YXRlcyAvPg0KICAgICAgICA8L3NnPg0KICAgICAgPC9zZ3M+DQogICAgPC9wcm9nPg0KICA8L3Byb2dzPg0KICA8c3RhZ2VzIC8+DQogIDxpbnRlcnN0YWdlUHJvZ3MgLz4NCiAgPHN0YWdlUHJvZ3MgLz4NCiAgPGRhaWx5UHJvZ0xpc3RzIC8+DQo8L3NjPg==" name="" no="2" offset="0" progFile="#exe#vissig_controller.dll" progNo="1" scDetRecLabelDet="PORTNUMBER" scDetRecLabelSG="NUMBER" scDetRecShortNam="false" sigTmsTabAutoConfig="true" sigTmsTabLabelDet="PORTNUMBER" sigTmsTabLabelSG="NUMBER" supplyFile1="#exe#vissig.config" supplyFile2="" supplyFile3="" type="FIXEDTIME">
+			<rampMeterPara metEvalInt="60" metRateQDisp="0.25" occupDes="0.25" occupQDispAct="0.5" occupQDispDeact="0.1" regPara="0.019444444444444441"/>
+			<sgs>
+				<signalGroup actuationType="UNDEFINED" amber="0" callDetPortNo="0" chkOutDetPortNo="0" clearTm="0" endGreen="0" endRed="0" greenFlsh="0" maxGreen="0" minGreen="5" minRed="1" name="4" no="1" redAmber="0" type="NORMAL"/>
+				<signalGroup actuationType="UNDEFINED" amber="0" callDetPortNo="0" chkOutDetPortNo="0" clearTm="0" endGreen="0" endRed="0" greenFlsh="0" maxGreen="0" minGreen="5" minRed="1" name="5" no="2" redAmber="0" type="NORMAL"/>
+			</sgs>
+			<sigTmsTabConfig>
+				<signalOutputConfigurationElement configName="SIGGRP" detPort="0" sg="2 1" title="" varNo="1" wttFilename=""/>
+				<signalOutputConfigurationElement configName="SIGGRP" detPort="0" sg="2 2" title="" varNo="2" wttFilename=""/>
+			</sigTmsTabConfig>
+			<wttFiles>
+				<intObjectRef key="1"/>
+			</wttFiles>
+		</signalController>
+		<signalController active="true" cycTm="0" cycTmIsVar="false" debug="false" guiFile="#exe#vissig_gui.dll" intSupplyData="PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzYyB2ZXJzaW9uPSIyMDIwMDEiIGlkPSIzIiBuYW1lPSIiIGZyZXF1ZW5jeT0iMSIgc3RlcHM9IjAiIGRlZmF1bHRJbnRlcmdyZWVuTWF0cml4PSIwIiBpbnRlcnN0YWdlc1VzaW5nTWluRHVyYXRpb25zPSJ0cnVlIiBjaGVja1N1bT0iMzk5NjU0NDIwMiI+DQogIDxzaWduYWxkaXNwbGF5cz4NCiAgICA8ZGlzcGxheSBpZD0iMSIgbmFtZT0iUmVkIiBzdGF0ZT0iUkVEIj4NCiAgICAgIDxwYXR0ZXJucz4NCiAgICAgICAgPHBhdHRlcm4gcGF0dGVybj0iTUlOVVMiIGNvbG9yPSIjRkYwMDAwIiBpc0JvbGQ9InRydWUiIC8+DQogICAgICA8L3BhdHRlcm5zPg0KICAgIDwvZGlzcGxheT4NCiAgICA8ZGlzcGxheSBpZD0iMyIgbmFtZT0iR3JlZW4iIHN0YXRlPSJHUkVFTiI+DQogICAgICA8cGF0dGVybnM+DQogICAgICAgIDxwYXR0ZXJuIHBhdHRlcm49IkZSQU1FIiBjb2xvcj0iIzAwQ0MwMCIgaXNCb2xkPSJ0cnVlIiAvPg0KICAgICAgICA8cGF0dGVybiBwYXR0ZXJuPSJTT0xJRCIgY29sb3I9IiMwMENDMDAiIGlzQm9sZD0iZmFsc2UiIC8+DQogICAgICA8L3BhdHRlcm5zPg0KICAgIDwvZGlzcGxheT4NCiAgPC9zaWduYWxkaXNwbGF5cz4NCiAgPHNpZ25hbHNlcXVlbmNlcz4NCiAgICA8c2lnbmFsc2VxdWVuY2UgaWQ9IjQiIG5hbWU9IlJlZC1HcmVlbiI+DQogICAgICA8c3RhdGUgZGlzcGxheT0iMSIgaXNGaXhlZER1cmF0aW9uPSJmYWxzZSIgaXNDbG9zZWQ9InRydWUiIGRlZmF1bHREdXJhdGlvbj0iMTAwMCIgLz4NCiAgICAgIDxzdGF0ZSBkaXNwbGF5PSIzIiBpc0ZpeGVkRHVyYXRpb249ImZhbHNlIiBpc0Nsb3NlZD0iZmFsc2UiIGRlZmF1bHREdXJhdGlvbj0iNTAwMCIgLz4NCiAgICA8L3NpZ25hbHNlcXVlbmNlPg0KICA8L3NpZ25hbHNlcXVlbmNlcz4NCiAgPHNncz4NCiAgICA8c2cgaWQ9IjEiIG5hbWU9IjYiIGRlZmF1bHRTaWduYWxTZXF1ZW5jZT0iNCI+DQogICAgICA8ZGVmYXVsdER1cmF0aW9ucz4NCiAgICAgICAgPGRlZmF1bHREdXJhdGlvbiBkaXNwbGF5PSIxIiBkdXJhdGlvbj0iMTAwMCIgLz4NCiAgICAgICAgPGRlZmF1bHREdXJhdGlvbiBkaXNwbGF5PSIzIiBkdXJhdGlvbj0iNTAwMCIgLz4NCiAgICAgIDwvZGVmYXVsdER1cmF0aW9ucz4NCiAgICA8L3NnPg0KICAgIDxzZyBpZD0iMiIgbmFtZT0iNyIgZGVmYXVsdFNpZ25hbFNlcXVlbmNlPSI0Ij4NCiAgICAgIDxkZWZhdWx0RHVyYXRpb25zPg0KICAgICAgICA8ZGVmYXVsdER1cmF0aW9uIGRpc3BsYXk9IjEiIGR1cmF0aW9uPSIxMDAwIiAvPg0KICAgICAgICA8ZGVmYXVsdER1cmF0aW9uIGRpc3BsYXk9IjMiIGR1cmF0aW9uPSI1MDAwIiAvPg0KICAgICAgPC9kZWZhdWx0RHVyYXRpb25zPg0KICAgIDwvc2c+DQogIDwvc2dzPg0KICA8aW50ZXJncmVlbm1hdHJpY2VzPg0KICAgIDxpbnRlcmdyZWVubWF0cml4IGlkPSIxIiBuYW1lPSJJbnRlcmdyZWVuIG1hdHJpeCAxIiAvPg0KICA8L2ludGVyZ3JlZW5tYXRyaWNlcz4NCiAgPHByb2dzPg0KICAgIDxwcm9nIGlkPSIxIiBjeWNsZXRpbWU9IjYwMDAwIiBzd2l0Y2hwb2ludD0iMCIgb2Zmc2V0PSIwIiBpbnRlcmdyZWVucz0iMCIgZml0bmVzcz0iMC4wMDAwMDAiIHZlaGljbGVDb3VudD0iMCIgbmFtZT0iU2lnbmFsIHByb2dyYW0gMSI+DQogICAgICA8c2dzPg0KICAgICAgICA8c2cgc2dfaWQ9IjEiIHNpZ25hbF9zZXF1ZW5jZT0iNCI+DQogICAgICAgICAgPGNtZHM+DQogICAgICAgICAgICA8Y21kIGRpc3BsYXk9IjMiIGJlZ2luPSIxMDAwIiAvPg0KICAgICAgICAgICAgPGNtZCBkaXNwbGF5PSIxIiBiZWdpbj0iMzAwMDAiIC8+DQogICAgICAgICAgPC9jbWRzPg0KICAgICAgICAgIDxmaXhlZHN0YXRlcyAvPg0KICAgICAgICA8L3NnPg0KICAgICAgICA8c2cgc2dfaWQ9IjIiIHNpZ25hbF9zZXF1ZW5jZT0iNCI+DQogICAgICAgICAgPGNtZHM+DQogICAgICAgICAgICA8Y21kIGRpc3BsYXk9IjEiIGJlZ2luPSIwIiAvPg0KICAgICAgICAgICAgPGNtZCBkaXNwbGF5PSIzIiBiZWdpbj0iMzAwMDAiIC8+DQogICAgICAgICAgPC9jbWRzPg0KICAgICAgICAgIDxmaXhlZHN0YXRlcyAvPg0KICAgICAgICA8L3NnPg0KICAgICAgPC9zZ3M+DQogICAgPC9wcm9nPg0KICA8L3Byb2dzPg0KICA8c3RhZ2VzIC8+DQogIDxpbnRlcnN0YWdlUHJvZ3MgLz4NCiAgPHN0YWdlUHJvZ3MgLz4NCiAgPGRhaWx5UHJvZ0xpc3RzIC8+DQo8L3NjPg==" name="" no="3" offset="0" progFile="#exe#vissig_controller.dll" progNo="1" scDetRecLabelDet="PORTNUMBER" scDetRecLabelSG="NUMBER" scDetRecShortNam="false" sigTmsTabAutoConfig="true" sigTmsTabLabelDet="PORTNUMBER" sigTmsTabLabelSG="NUMBER" supplyFile1="#exe#vissig.config" supplyFile2="" supplyFile3="" type="FIXEDTIME">
+			<rampMeterPara metEvalInt="60" metRateQDisp="0.25" occupDes="0.25" occupQDispAct="0.5" occupQDispDeact="0.1" regPara="0.019444444444444441"/>
+			<sgs>
+				<signalGroup actuationType="UNDEFINED" amber="0" callDetPortNo="0" chkOutDetPortNo="0" clearTm="0" endGreen="0" endRed="0" greenFlsh="0" maxGreen="0" minGreen="5" minRed="1" name="6" no="1" redAmber="0" type="NORMAL"/>
+				<signalGroup actuationType="UNDEFINED" amber="0" callDetPortNo="0" chkOutDetPortNo="0" clearTm="0" endGreen="0" endRed="0" greenFlsh="0" maxGreen="0" minGreen="5" minRed="1" name="7" no="2" redAmber="0" type="NORMAL"/>
+			</sgs>
+			<sigTmsTabConfig>
+				<signalOutputConfigurationElement configName="SIGGRP" detPort="0" sg="3 1" title="" varNo="1" wttFilename=""/>
+				<signalOutputConfigurationElement configName="SIGGRP" detPort="0" sg="3 2" title="" varNo="2" wttFilename=""/>
 			</sigTmsTabConfig>
 			<wttFiles>
 				<intObjectRef key="1"/>
@@ -2121,12 +2100,12 @@
 	</signalControllers>
 	<signalHeads>
 		<signalHead allPedTypes="true" allVehTypes="true" anmFlag="false" complRate="1" dischRecAct="false" isBlockSig="false" lane="10003 1" localNo="0" name="" no="1" pos="3.18707919408142" sg="1 1" slowDownDist="3" type="CIRCULAR" vAmberBlock="0"/>
-		<signalHead allPedTypes="true" allVehTypes="true" anmFlag="false" complRate="1" dischRecAct="false" isBlockSig="false" lane="10001 1" localNo="0" name="" no="2" pos="2.2434981183527785" sg="1 3" slowDownDist="3" type="CIRCULAR" vAmberBlock="0"/>
-		<signalHead allPedTypes="true" allVehTypes="true" anmFlag="false" complRate="1" dischRecAct="false" isBlockSig="false" lane="10000 1" localNo="0" name="" no="3" pos="2.8252486116431319" sg="1 4" slowDownDist="3" type="CIRCULAR" vAmberBlock="0"/>
-		<signalHead allPedTypes="true" allVehTypes="true" anmFlag="false" complRate="1" dischRecAct="false" isBlockSig="false" lane="4 1" localNo="0" name="" no="4" pos="82.513741246874432" sg="1 1" slowDownDist="3" type="CIRCULAR" vAmberBlock="0"/>
-		<signalHead allPedTypes="true" allVehTypes="true" anmFlag="false" complRate="1" dischRecAct="false" isBlockSig="false" lane="5 1" localNo="0" name="" no="5" pos="75.400911522442286" sg="1 1" slowDownDist="3" type="CIRCULAR" vAmberBlock="0"/>
-		<signalHead allPedTypes="true" allVehTypes="true" anmFlag="false" complRate="1" dischRecAct="false" isBlockSig="false" lane="10004 1" localNo="0" name="" no="6" pos="0.016052863123630953" sg="1 1" slowDownDist="3" type="CIRCULAR" vAmberBlock="0"/>
-		<signalHead allPedTypes="true" allVehTypes="true" anmFlag="false" complRate="1" dischRecAct="false" isBlockSig="false" lane="10005 1" localNo="0" name="" no="7" pos="0.25710833743318801" sg="1 1" slowDownDist="3" type="CIRCULAR" vAmberBlock="0"/>
+		<signalHead allPedTypes="true" allVehTypes="true" anmFlag="false" complRate="1" dischRecAct="false" isBlockSig="false" lane="10001 1" localNo="0" name="" no="2" pos="2.2434981183527785" sg="1 2" slowDownDist="3" type="CIRCULAR" vAmberBlock="0"/>
+		<signalHead allPedTypes="true" allVehTypes="true" anmFlag="false" complRate="1" dischRecAct="false" isBlockSig="false" lane="10000 1" localNo="0" name="" no="3" pos="2.8252486116431319" sg="1 3" slowDownDist="3" type="CIRCULAR" vAmberBlock="0"/>
+		<signalHead allPedTypes="true" allVehTypes="true" anmFlag="false" complRate="1" dischRecAct="false" isBlockSig="false" lane="4 1" localNo="0" name="" no="4" orSG="2 1" pos="82.513741246874432" sg="2 1" slowDownDist="3" type="CIRCULAR" vAmberBlock="0"/>
+		<signalHead allPedTypes="true" allVehTypes="true" anmFlag="false" complRate="1" dischRecAct="false" isBlockSig="false" lane="5 1" localNo="0" name="" no="5" orSG="2 2" pos="75.400911522442286" sg="2 2" slowDownDist="3" type="CIRCULAR" vAmberBlock="0"/>
+		<signalHead allPedTypes="true" allVehTypes="true" anmFlag="false" complRate="1" dischRecAct="false" isBlockSig="false" lane="4 1" localNo="0" name="" no="6" orSG="3 1" pos="153.93925695826803" sg="3 1" slowDownDist="3" type="CIRCULAR" vAmberBlock="0"/>
+		<signalHead allPedTypes="true" allVehTypes="true" anmFlag="false" complRate="1" dischRecAct="false" isBlockSig="false" lane="10005 1" localNo="0" name="" no="7" orSG="3 2" pos="0.25710833743318801" sg="3 2" slowDownDist="3" type="CIRCULAR" vAmberBlock="0"/>
 	</signalHeads>
 	<simulation comment="" numCores="1" numRuns="1" randSeed="42" randSeedIncr="1" retroSync="false" simMode="MICRO" simPeriod="3000" simRes="1" simSpeed="10" startTm="0" useAllCores="true" useMaxSimSpeed="true" volumeIncrDynAssign="0"/>
 	<timeDistributions>
@@ -2269,68 +2248,31 @@
 				<timeIntervalVehVolume cont="false" timeInt="1 1100000" vehComp="2" volType="STOCHASTIC" volume="200"/>
 			</timeIntVehVols>
 		</vehicleInput>
-		<vehicleInput anmFlag="false" link="7" name="" no="6">
-			<timeIntVehVols>
-				<timeIntervalVehVolume cont="false" timeInt="1 0" vehComp="2" volType="STOCHASTIC" volume="200"/>
-				<timeIntervalVehVolume cont="false" timeInt="1 1000000" vehComp="2" volType="STOCHASTIC" volume="0"/>
-				<timeIntervalVehVolume cont="false" timeInt="1 1100000" vehComp="2" volType="STOCHASTIC" volume="0"/>
-			</timeIntVehVols>
-		</vehicleInput>
 	</vehicleInputs>
 	<vehicleRoutingDecisionsStatic>
 		<vehicleRoutingDecisionStatic allVehTypes="true" anmFlag="false" combineStaRoutDec="false" link="1" name="" no="1" pos="110.01944475069392" routeChoiceMeth="STATIC">
 			<vehRoutSta>
-				<vehicleRouteStatic destLink="8" destPos="84.385118129234741" formula="" name="" no="1" relFlow="">
+				<vehicleRouteStatic destLink="4" destPos="57.729684350378001" formula="" name="" no="1" relFlow="">
 					<linkSeq>
 						<intObjectRef key="10003"/>
-						<intObjectRef key="4"/>
-						<intObjectRef key="10002"/>
-						<intObjectRef key="6"/>
-						<intObjectRef key="10004"/>
 					</linkSeq>
 				</vehicleRouteStatic>
 			</vehRoutSta>
 		</vehicleRoutingDecisionStatic>
 		<vehicleRoutingDecisionStatic allVehTypes="true" anmFlag="false" combineStaRoutDec="false" link="2" name="" no="3" pos="111.43409488376403" routeChoiceMeth="STATIC">
 			<vehRoutSta>
-				<vehicleRouteStatic destLink="8" destPos="84.140903915772654" formula="" name="" no="1" relFlow="">
+				<vehicleRouteStatic destLink="4" destPos="47.488592234898839" formula="" name="" no="1" relFlow="">
 					<linkSeq>
 						<intObjectRef key="10001"/>
-						<intObjectRef key="4"/>
-						<intObjectRef key="10002"/>
-						<intObjectRef key="6"/>
-						<intObjectRef key="10004"/>
 					</linkSeq>
 				</vehicleRouteStatic>
 			</vehRoutSta>
 		</vehicleRoutingDecisionStatic>
 		<vehicleRoutingDecisionStatic allVehTypes="true" anmFlag="false" combineStaRoutDec="false" link="3" name="" no="4" pos="108.88623829268457" routeChoiceMeth="STATIC">
 			<vehRoutSta>
-				<vehicleRouteStatic destLink="8" destPos="83.897684356609886" formula="" name="" no="1" relFlow="">
+				<vehicleRouteStatic destLink="4" destPos="53.223720746503275" formula="" name="" no="1" relFlow="">
 					<linkSeq>
 						<intObjectRef key="10000"/>
-						<intObjectRef key="4"/>
-						<intObjectRef key="10002"/>
-						<intObjectRef key="6"/>
-						<intObjectRef key="10004"/>
-					</linkSeq>
-				</vehicleRouteStatic>
-			</vehRoutSta>
-		</vehicleRoutingDecisionStatic>
-		<vehicleRoutingDecisionStatic allVehTypes="true" anmFlag="false" combineStaRoutDec="false" link="7" name="" no="5" pos="1.9337449914758333" routeChoiceMeth="STATIC">
-			<vehRoutSta>
-				<vehicleRouteStatic destLink="9" destPos="70.762534857820711" formula="" name="" no="1" relFlow="">
-					<linkSeq>
-						<intObjectRef key="10005"/>
-					</linkSeq>
-				</vehicleRouteStatic>
-			</vehRoutSta>
-		</vehicleRoutingDecisionStatic>
-		<vehicleRoutingDecisionStatic allVehTypes="true" anmFlag="false" combineStaRoutDec="false" link="5" name="" no="7" pos="2.0958735006194775" routeChoiceMeth="STATIC">
-			<vehRoutSta>
-				<vehicleRouteStatic destLink="10" destPos="59.775062066035126" formula="" name="" no="1" relFlow="">
-					<linkSeq>
-						<intObjectRef key="10006"/>
 					</linkSeq>
 				</vehicleRouteStatic>
 			</vehRoutSta>

@@ -45,41 +45,42 @@ SC_number = 1 # SC = SignalController
 SG_number = 1 # SG = SignalGroup
 
 
+
 '''
 SCATS: minimize maximum degree of saturation of all links
 DS definition for SCATS = used green time / available green time
 variation of each stage length by +- 4% using the ratios of DS with cycle length
 '''
-
-
 def intersection(SH_numbers, id, Vissim):
-    # SH_numbers = [1,2]
+    #SH_numbers = [1,2]
     total_cycle = 120
-    stage_lengths = [total_cycle/len(SH_numbers) for i in range(len(SH_numbers))]
-    SignalController = Vissim.Net.SignalControllers.ItemByKey(id)
+    act_stage_lengths = [total_cycle/2 for i in range(len(SH_numbers))]
+    calc_stage_lengths = [total_cycle/2 for i in range(len(SH_numbers))]
 
+    SignalController = Vissim.Net.SignalControllers.ItemByKey(id)
+    
     # Note: The signal controller can only be called at whole simulation seconds, so the state will be set in Vissim at the next whole simulation second, here 199s
     # Simulate so that the new state is active in the Vissim simulation:
     Sim_end = 3000 # simulation second [s]
     Sim_start = time.time() # simulation second [s]
-    #Vissim.Simulation.SetAttValue("SimBreakAt", Sim_end)
+    Vissim.Simulation.SetAttValue("SimBreakAt", Sim_end)
 
     degree_saturation = [0.5] * len(SH_numbers)
     #SignalGroup.SetAttValue("ContrByCOM", True) 
     while time.time() - Sim_start < Sim_end:
         # Cycle level
-        print("cycle level", time.time() - Sim_start)
+        print("cycle level", Vissim.Simulation.AttValue('SimSec'))
         All_Vehicles = Vissim.Net.Vehicles.GetAll()
         b = np.zeros(5, dtype=float)
         if len(All_Vehicles) == 0: # if no cars come yet, we let it continous run
             Vissim.Simulation.RunSingleStep()
             print("No car")
         #else: # if there get cars, we control their speed
-            #for cur_Veh in All_Vehicles: # get buffer size for each link
-                #lane = str(cur_Veh.AttValue('Lane'))
-                #if(len(lane)==3):
-                #    idx = int(lane[0])-1
-                    #b[idx] += 1
+         #   for cur_Veh in All_Vehicles: # get buffer size for each link
+          #      lane = str(cur_Veh.AttValue('Lane'))
+           #     if(len(lane)==3):
+            #        idx = int(lane[0])-1
+             #       b[idx] += 1
             #if b[0]+b[2]>=550/8 or b[1]+b[3]>=550/8:
              #   Break = 1
               #  print("MAX CAPACITY:",time.time())
@@ -93,19 +94,20 @@ def intersection(SH_numbers, id, Vissim):
         
         # else for higher degree increment time, for lower degree decrement
         if not equal:
-            saturation = list(zip(range(len(SH_numbers)), degree_saturation))
+            saturation = list(zip(range(2), degree_saturation))
             sorted_saturation = sorted(saturation, key= lambda item : item[1])
-            for sat in sorted_saturation[:int(len(saturation)/2)]:
-                stage_lengths[sat[0]] -= 1
-            for sat in sorted_saturation[int(len(saturation)/2):]:
-                stage_lengths[sat[0]] += 1
+            act_stage_lengths[sorted_saturation[0][0]] = calc_stage_lengths[sorted_saturation[0][0]] - 4
+            calc_stage_lengths[sorted_saturation[0][0]] -= 1
+            act_stage_lengths[sorted_saturation[-1][0]] = calc_stage_lengths[sorted_saturation[0][0]] + 4
+            calc_stage_lengths[sorted_saturation[-1][0]] += 1
+
             print("sat", degree_saturation)
 
         for i in range(len(SH_numbers)):
             # Stage level
-            print("stage level", time.time() - Sim_start, SH_numbers[i], stage_lengths[i])
-            # Enable stage by activating signal and deactivating all others
+            print("stage level", Vissim.Simulation.AttValue('SimSec'), SH_numbers[i], calc_stage_lengths[i])
            
+            # Enable stage by activating signal and deactivating all others
             for j in range(len(SH_numbers)):
                 SignalGroup = SignalController.SGs.ItemByKey(SH_numbers[j])
                 if j == i:
@@ -113,20 +115,20 @@ def intersection(SH_numbers, id, Vissim):
                 else:
                     SignalGroup.SetAttValue("SigState", "RED")
             
-            # Calculate used green time
+            # Calculate used green time and discharge rate
             All_Vehicles = Vissim.Net.Vehicles.GetAll()
-            vehicles_in_lane = [veh for veh in All_Vehicles if veh.AttValue('Lane') == f"{SH_numbers[i]}-1"]
+            vehicles_in_lane = [veh for veh in All_Vehicles if veh.AttValue('Lane') == f"{i+1}-1"]
             stage_start_time = time.time()
 
-            available_green_time = stage_lengths[i] if stage_lengths[i] else 1
-            used_green_time = stage_lengths[i]
+            available_green_time = act_stage_lengths[i]
+            used_green_time = act_stage_lengths[i]
+            cars_exited = 0
             
-            if id == 1:
-                Vissim.Simulation.RunSingleStep()    
+            Vissim.Simulation.RunSingleStep()    
 
-            for t in range(int(stage_lengths[i])):
+            for t in range(int(act_stage_lengths[i])):
                 New_All_Vehicles = Vissim.Net.Vehicles.GetAll()
-                new_vehicles_in_lane = [veh for veh in New_All_Vehicles if veh.AttValue('Lane') == f"{SH_numbers[i]}-1"]
+                new_vehicles_in_lane = [veh for veh in New_All_Vehicles if veh.AttValue('Lane') == f"{i+1}-1"]
 
                 car_exited = False
                 for veh in vehicles_in_lane:                
@@ -135,6 +137,7 @@ def intersection(SH_numbers, id, Vissim):
                         if veh.AttValue('No') == out_veh.AttValue('No'):
                             car_present = True
                     if not car_present:
+                        cars_exited += 1
                         car_exited = True
 
                 if not car_exited:
@@ -142,10 +145,13 @@ def intersection(SH_numbers, id, Vissim):
                 
                 vehicles_in_lane = [veh for veh in New_All_Vehicles if veh.AttValue('Lane') == f"{i+1}-1"]
                 
-                if id == 1:
-                    Vissim.Simulation.RunSingleStep()    
+                Vissim.Simulation.RunSingleStep()    
 
-            degree_saturation[i] = used_green_time / available_green_time
+            discharge_rate = cars_exited / act_stage_lengths[i] 
+            if (discharge_rate * used_green_time) != 0:
+                degree_saturation[i] = len(vehicles_in_lane)  / (discharge_rate * used_green_time) 
+            else:
+                degree_saturation[i] = 0
 
 t1 = threading.Thread(target=intersection, args=[[1,2,3], 1, Vissim])
 t2 = threading.Thread(target=intersection, args=[[1,2], 2, Vissim])
@@ -159,5 +165,5 @@ t2.join()
 t3.join()
 Vissim.Simulation.Stop()
 # Give the control back:
-#SignalGroup.SetAttValue("ContrByCOM", False) 
-
+SignalGroup.SetAttValue("ContrByCOM", False) 
+ 
