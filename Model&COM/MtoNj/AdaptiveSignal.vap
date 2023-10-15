@@ -1,0 +1,70 @@
+PROGRAM AdaptiveSignal; /* C:\Users\zj2187\Desktop\Vissim\AdaptiveSignal.vap */
+
+VAP_FREQUENCY 1;
+
+CONST 
+            T1 = 25,
+            T2 = 25,
+            T3 = 25,
+            T4 = 25;
+
+/* ARRAYS */ 
+
+/* SUBROUTINES */ 
+
+/* PARAMETERS DEPENDENT ON SCJ-PROGRAM */ 
+            
+/* EXPRESSIONS */ 
+            P1 := (Front_ends( 1 )-Front_ends( 2 ))-(Front_ends( 9 )-Front_ends( 10 ));
+            P2 := (Front_ends( 3 )-Front_ends( 4 ))-(Front_ends( 9 )-Front_ends( 10 ));
+            P3 := (Front_ends( 5 )-Front_ends( 6 ))-(Front_ends( 9 )-Front_ends( 10 ));
+            P4 := (Front_ends( 7 )-Front_ends( 8))-(Front_ends( 9 )-Front_ends( 10 ));
+            No1 := ((Front_ends( 1 )-Front_ends( 2 ))=0);
+            No2 := ((Front_ends( 3 )-Front_ends( 4 ))=0);
+            No3 := ((Front_ends( 5 )-Front_ends( 6 ))=0);
+            No4 := ((Front_ends( 7 )-Front_ends( 8 ))=0);
+
+/* MAIN PROGRAM */ 
+
+S00Z001:    IF NOT init THEN
+S04Z001:      init:=1;
+S04Z002:      IF C = 1 THEN
+S05Z002:        IF No1 AND No2 AND No3 AND No4 THEN
+S06Z002:          RT1:=T1;RT2:=T2;RT3:=T3;RT4:=T4;
+S05Z005:          C:=0
+                ELSE
+S05Z003:          RT1:=100*(P1/(P1+P2+P3+P4)); RT2:=100*(P2/(P1+P2+P3+P4)); RT3:=100*(P3/(P1+P2+P3+P4)); RT4:=100*(P4/(P1+P2+P3+P4));
+                  GOTO S05Z005
+                END
+              END
+            ELSE
+S00Z005:      C:=0;
+S00Z006:      IF No1 AND No2 AND No3 AND No4 THEN
+S01Z006:        RT1:=T1;RT2:=T2;RT3:=T3;RT4:=T4
+              ELSE
+S00Z007:        RT1:=100*(P1/(P1+P2+P3+P4)); RT2:=100*(P2/(P1+P2+P3+P4)); RT3:=100*(P3/(P1+P2+P3+P4)); RT4:=100*(P4/(P1+P2+P3+P4))
+              END
+            END;
+S00Z012:    IF Stage_active( 1 ) THEN
+S01Z012:      IF StgT( 1 )>=RT1 THEN
+S02Z012:        Interstage( 1 , 2)
+              END
+            END;
+S00Z014:    IF Stage_active( 2 ) THEN
+S01Z014:      IF StgT( 2 )>=RT2 THEN
+S02Z014:        Interstage( 2 , 3)
+              END
+            END;
+S00Z016:    IF Stage_active( 3 ) THEN
+S01Z016:      IF StgT( 3 )>=RT3 THEN
+S02Z016:        Interstage( 3 , 4)
+              END
+            END;
+S00Z018:    IF Stage_active( 4 ) THEN
+S01Z018:      IF StgT( 4 )>=RT4 THEN
+S02Z018:        Interstage( 4 , 1);
+S02Z019:        C := 1
+              END
+            END
+PROG_ENDE:    .
+/*----------------------------------------------------------------------------*/
